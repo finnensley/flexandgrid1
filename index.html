@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Using Flex and Grid</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+<section>
+    <header class="header">
+    <h1>My Music Gallery</h1>
+    <nav>
+        <a class="home" href="index.html">Home</a>
+        <a href="guitar.html">Guitar</a>
+        <a href="piano.html">Piano</a>
+        <a href="second-line.html">Second Line</a>
+        <a href="byzance.html">Byzance</a>
+        <a href="vibe.html">Vibe</a>
+        <a href="amp.html">Amp</a>
+    </nav>
+    </header>
+    <section class="flex-container">
+        <div class="card">
+            <img src="images/pexels-david-bartus-43782-435840.jpg">
+            <h3>Guitar</h3>
+            <p>my first love</p>
+            <a href="guitar.html">
+                <button type="button" id="playGuitar">Click Me</button>
+            </a>
+        </div>
+        <div class="card-example">
+            <img src="images/pexels-pixabay-159448.jpg">
+            <h3>Old Instruments Have Stories To Tell</h3>
+            <p>they aren't meant to be silent</p>
+            <a href="piano.html">
+                <button type="button" id="piano">Click Me</button>
+            </a>
+        </div>
+        <div class="card">
+            <img src="images/pexels-kelly-1179532-21771325.jpg">
+            <h3>New Orleans Second Line</h3>
+            <p>take it to the street</p>
+            <a href="second-line.html">
+                <button type="button" id="second-line">Click Me</button>
+            </a>
+        </div>
+    </section>
+    <section class="grid-container">
+        <div class="card">
+            <img src="images/pexels-cottonbro-5650789.jpg">
+            <h3>Byzance Baby</h3>
+            <p>best of the best</p>
+             <a href="byzance.html">
+                <button type="button" id="byzance">Click Me</button>
+            </a>
+        </div>
+        <div class="card">
+            <!-- <img src=""> -->
+            <video controls width="560" src="images/19265267-sd_426_240_24fps.mp4"></video>
+            <h3>My Vibe Everyday</h3>
+            <p>the cutest part of my day is when my 19 month old plays along with her sticks, and stomps her feet</p>
+            <a href="vibe.html">
+                <button type="button" id="vibe">Click Me</button>
+            </a>
+        </div>
+        <div class="card">
+            <img src="images/pexels-yakup-polat-420882786-20104925.jpg">
+            <h3>Vintage Tube Amps </h3>
+            <p>like a warm hug to my ears </p>
+             <a href="amp.html">
+                <button type="button" id="amp">Click Me</button>
+            </a>
+        </div>
+    </section>
+ </section>   
+</body>
+</html>
