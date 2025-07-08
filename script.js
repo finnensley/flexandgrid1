@@ -14,3 +14,18 @@
     vibePage.addEventListener("click", () => {
         vibePage.play();
     }) 
+
+    //light/dark theme
+    function setTheme(theme) {
+        localStorage.setItem("theme", theme);
+        document.body.style.background = theme === "dark" ? "rgb(243, 193, 102)" : "#fff";
+        document.body.color = theme === "dark" ? "#fff" : "#000";
+    }
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme) {
+        setTheme(savedTheme);
+    }
+
+    
